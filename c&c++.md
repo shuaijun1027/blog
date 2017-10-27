@@ -1,3 +1,9 @@
+## 引用声明  
+``` c++
+int i=20;// ok i是Lvalue
+int& i=20;// error 
+```  
+
 ## explicit  
 ``` c++ 
 class A
@@ -31,4 +37,13 @@ A a(2);// ok 3
 
 explicit A(int j=1,int h=1):i(j+h){}
 A a();// error 无法调用无参构造函数
-```
+```   
+
+## auto  
+``` c++  
+int i=20;
+auto a=i;// ok 20
+
+
+```  
+
